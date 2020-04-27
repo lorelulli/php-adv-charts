@@ -1,5 +1,5 @@
 <?php
-include 'php/data.php';
+include __DIR__ . '/../php/data.php';
 
     $line = $graphs ['fatturato'];
     header('Content-Type: application/json');

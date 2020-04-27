@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     $.ajax({
-        url: 'server.php',
+        url: 'server/server.php',
         method: 'GET',
         success: function (data) {
 
@@ -44,7 +44,7 @@ $(document).ready(function () {
     })
 
     $.ajax({
-        url: 'serverdata.php',
+        url: 'server/serverdata.php',
         method: 'GET',
         success: function (data) {
             console.log(data);
@@ -71,7 +71,7 @@ $(document).ready(function () {
 
     })
     $.ajax({
-        url: 'serverpie.php',
+        url: 'server/serverpie.php',
         method: 'GET',
         success: function (data) {
             console.log(data);
