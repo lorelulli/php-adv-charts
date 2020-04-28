@@ -12,22 +12,22 @@
         <?php include 'php/databis.php'; ?>
 
         <?php $firstlevel = $graphs['fatturato']['access']; ?>
-        <?php $firstlevel = $graphs['fatturato_by_agent']['access']; ?>
-        <?php $firstlevel = $graphs['team_efficiency']['access']; ?>
+        <?php $secondlevel = $graphs['fatturato_by_agent']['access']; ?>
+        <?php $thirdlevel = $graphs['team_efficiency']['access']; ?>
 
 
-        <?php if ($level === 'guest')  { ?>
+        <?php if ($level == $firstlevel)  { ?>
             <canvas id="line-chart"  width="400" height="400"></canvas>
 
 
 
         <?php }
-        elseif ($level === 'employee') { ?>
+        elseif ($level == $secondlevel) { ?>
             <canvas id="line-chart"  width="400" height="400"></canvas>
             <canvas id="pie-chart" width="400" height="400"> </canvas>
 
         <?php }
-        elseif ($level === 'clevel') { ?>
+        elseif ($level == $thirdlevel) { ?>
             <canvas id="line-chart"  width="400" height="400"></canvas>
             <canvas id="pie-chart" width="400" height="400"> </canvas>
             <canvas id="line-chart-bis" width="400" height="400"> </canvas>
